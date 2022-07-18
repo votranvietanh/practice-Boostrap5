@@ -152,6 +152,16 @@ a {
     color: #ff4f81;
 }
 
+.navInstruction .navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
+}
+.navInstruction .navbar-toggler{
+    background-color: black;
+    color: #ff4f81;
+   
+} 
+
 /* CAROUSEL */
 #carouselInstruction .carousel-caption {
     top: 50%;
@@ -201,6 +211,9 @@ a {
 .welcome__courses i {
     font-size: 2rem;
     margin-top: 1rem;
+}
+.welcome__courses .row>*{
+    padding: 0 0;
 }
 
 .welcome__item h2 {
@@ -272,6 +285,7 @@ a {
     text-align: center;
     background-color: white;
     transition: all 0.5s;
+    min-height: 450px;
 }
 
 .offer__item i {
@@ -426,7 +440,10 @@ footer {
     transition: all 0.5s;
 
 }
-
+.footer__contact{
+    display: flex;
+    align-items: center;
+}
 .footer__link i {
     color: #ff4f81;
     margin-right: 5px;
@@ -507,8 +524,72 @@ footer {
 }
 /* ******************RESPONSIVE***** */
 /* HEADER    */
+@media screen and (max-width:1199.98px) {
+    #carouselInstruction .carousel-caption {
+        top:50%
+
+    }
+    #carouselInstruction .carousel-caption h1{
+        font-size: 4vw;
+    }
+    #carouselInstruction .carousel-caption p{
+        font-size: 1.6vw;
+    }
+    #carouselInstruction .carousel-caption button{
+        font-size: 1.5vw;
+        padding: 0.8em 1em;
+    }
+    .feedBack__bottom{
+        width: 100%;
+    } 
+    
+}
+@media screen and (max-width:991.98px) {
+    #navbarInstruction .navbar-brand p:first-child{
+        font-size: 3vw;
+    }
+    #navbarInstruction .navbar-nav
+    {
+        background-color: #eee;
+        text-align: center;
+    }
+    #navbarInstruction .dropdown-menu {
+        background-color: #959494;
+        text-align: center;
+    }
+    #navbarInstruction .dropdown-item{
+        color: #fbf9f9;
+    }
+    
+    
+}
+
+@media screen and (max-width:767.98px) {
+    #navbarInstruction .navbar-nav
+    {
+        background-color: #eee;
+        text-align: center;
+    }
+    #navbarInstruction .dropdown-menu {
+        background-color: #959494;
+        text-align: center;
+    }
+    #navbarInstruction .dropdown-item{
+        color: #fbf9f9;
+    }
+    #carouselInstruction .carousel-caption p{
+        line-height: 0.9rem;
+    }
+    .feedBack__bottom{
+        width: 100%;
+    } 
+    
+}
 @media screen and (max-width:575.98px) 
 {
+    .heading p{
+        padding: 0 15px;
+    }
     .header__left a
     {
         display: block;
@@ -522,7 +603,49 @@ footer {
     .header__right a{
         margin-bottom: 5px;
     }
+    #carouselInstruction .carousel-caption p{
+        line-height: 0.5rem;
+        padding: 0;
+    }
+    .feedBack__bottom{
+        width: 100%;
+    } 
 
 }
     
+@media screen and (min-width: 768px) and (max-width:992px)
+{
+    #navbarInstruction .nav-item{
+        margin: 0;
+        padding: 0 2px;
+        
+    }
+    #navbarInstruction .navbar-nav
+    {
+        background-color: #eee;
+        text-align: center;
+    }
+    #navbarInstruction .dropdown-menu {
+        background-color: #959494;
+        text-align: center;
+    }
+    #navbarInstruction .dropdown-item{
+        color: #fbf9f9;
+    }
+    .feedBack__bottom{
+        width: 100%;
+    } 
 }
+    
+@media screen and (min-width:576px) and (max-width:992px)
+ {
+    .feedBack__bottom{
+        width: 85%;
+    }    
+}
+@media screen and (max-width:375px)
+{
+    .feedBack__bottom{
+        width: 100%;
+    }
+} 
