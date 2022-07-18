@@ -65,6 +65,7 @@ a {
     border: 1px white solid;
 }
 
+
 .header__right a {
     border: 1px solid black;
     width: 30px;
@@ -417,11 +418,13 @@ footer {
 }
 
 .footer__top p,
-a {
+.footer__top a {
     margin-top: 1.5rem;
     color: #999;
     font-size: 15px;
     letter-spacing: 1px;
+    transition: all 0.5s;
+
 }
 
 .footer__link i {
@@ -449,14 +452,23 @@ a {
     font-weight: bold;
 }
 
-.footer__form input{
+.footer__form input {
     padding: 14px;
     border-radius: 0;
     letter-spacing: 1px;
     color: #8888;
+
 }
 
-.footer__form button{
+.footer__link a:hover {
+    color: aliceblue;
+}
+
+.footer__contact a:hover {
+    color: aliceblue;
+}
+
+.footer__form button {
     padding: 14px 30px;
     background-color: #ff4f81;
     letter-spacing: 1px;
@@ -464,13 +476,17 @@ a {
     color: #dedede;
     outline: none;
 }
-.footer__bottom{
+
+.footer__bottom {
     padding: 1rem 0;
     color: white;
 }
-.footer__bottom a{
+
+.footer__bottom a {
     color: #ff4f81;
+
 }
+
 /* MODAL  */
 #exampleModal .modal-title {
     font-size: 29px;
@@ -483,8 +499,30 @@ a {
     font-size: 14px;
     color: #777;
     line-height: 1.8em;
+
 }
 
 .modal-dialog {
     max-width: 600px;
+}
+/* ******************RESPONSIVE***** */
+/* HEADER    */
+@media screen and (max-width:575.98px) 
+{
+    .header__left a
+    {
+        display: block;
+    }    
+}
+@media screen and (max-width: 360px){
+    .header__right {
+        width: 35%;
+        text-align: center;
+    }
+    .header__right a{
+        margin-bottom: 5px;
+    }
+
+}
+    
 }
